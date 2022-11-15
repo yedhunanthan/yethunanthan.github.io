@@ -25,7 +25,7 @@ button.forEach((x) => {
             dwnld.download = file.substring(file.lastIndexOf('/') + 1);
             dwnld.click();
             
-            url = "https://drive.google.com/file/d/1wY1f4yNYVuXM7W6dJ7cZAE4GO2P7OK3i/view";
+            url = "https://drive.google.com/file/d/1XlVIiCBZgo6ttXjd3Jqz5J6Z-HYOqDfc/view?usp=sharing";
             window.open(url);
 
         }else if(link == "GitHub"){
