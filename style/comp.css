@@ -1,0 +1,135 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    width: 100vw;
+    background-color: #0a192f69;
+    backdrop-filter: blur(5px);
+    box-shadow: #ffffff26 1.95px 1.95px 2.6px;
+    z-index: 100;
+}
+
+#nav  div{
+    background: transparent;
+}
+
+#icon{
+    margin: 10px 5%;
+}
+#icon > a > img{
+    width: 60px;
+    background: transparent;
+}
+
+#link{
+    gap: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+}
+
+#link > a{
+    text-decoration: none;
+    background: transparent;
+}
+
+a>span{
+    background: transparent;
+}
+
+#nav > button{
+    display: inline;
+    padding: 10px;
+    color: #14e956;
+    border: 2px solid #14e956;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5%;
+}
+
+#menu{
+    display: none;
+    cursor: pointer;
+}
+
+#footer{
+    font-size: 15px;
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#footer img{
+    width: 20px;
+    margin: auto;
+    transform: translateY(5px);
+}
+
+
+@media only screen and (max-width: 768px){
+    #menu{
+        display: block;
+        margin: 10px 20px;
+    }
+
+    .line{
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #menu.active .line:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    #menu.active .line:nth-child(2){
+        opacity: 0;
+    }
+
+    #menu.active .line:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    #icon{
+        display: none;
+    }
+    #link{
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 100vh;
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        background-color: #0a192fd2 !important;
+        transition: 0.5s;     
+        font-size: 18px;
+    }
+
+    #link > a, #link > a > span{
+        background: transparent;
+    }
+
+    #link.active{
+        top: 10vh;
+    }
+
+    #footer{
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav{
+        font-size: 20px;
+    }
+
+}

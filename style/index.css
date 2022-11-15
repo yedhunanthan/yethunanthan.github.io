@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+    color: #70dabf;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+#home{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#intro, #hero{
+    background: transparent;
+}
+
+#intro > p{
+    background: transparent;
+    font-size: 3rem;
+}
+#hero > svg{
+    height: 400px;
+    width: 400px;
+    background: transparent;
+}
+
+#typing{
+    font-family: Nabla;
+    font-size: smaller;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 10% 0;
+    align-items: center;
+}
+
+#about > #image > img{
+    width: 350px;
+    /* height: 400px; */
+    /* object-fit: cover; */
+    border-radius: 10%;
+}
+
+#detail {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+#detail  .buttonArea   button{
+    display: inline;
+    padding: 10px;
+    background-color: #14e956;
+    color: #0a192f;
+    font-weight: 700;
+    border: 2px solid #14e956;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100px;
+}
+
+.buttonArea{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.aboutCard{
+    background-color: rgba(240, 248, 255, 0.132);
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    
+}
+
+.aboutCard p,.aboutCard  span,.aboutCard a{
+    background: transparent;
+    font-size: 15px;
+    text-overflow: ellipsis;
+}
+
+#techStack{
+    text-align: center;
+}
+#techStack > .tech{
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 20px;
+    grid-template-areas: 
+    "one two three four"
+    "five six seven eight"
+    ". nine ten .";
+}
+
+.tech > div > img{
+    width: 100px;
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+}
+
+.tech > div{
+    text-align: center;
+}
+
+.tech > div:nth-child(1){
+    grid-area: one;
+}
+.tech > div:nth-child(2){
+    grid-area: two;
+}
+.tech > div:nth-child(3){
+    grid-area: three;
+}
+.tech > div:nth-child(4){
+    grid-area: four;
+}
+.tech > div:nth-child(5){
+    grid-area: five;
+}
+.tech > div:nth-child(6){
+    grid-area: six;
+}
+.tech > div:nth-child(7){
+    grid-area: seven;
+}
+
+.tech > div:nth-child(8){
+    grid-area: eight;
+}
+
+.tech > div:nth-child(9){
+    grid-area: nine;
+}
+.tech > div:nth-child(10){
+    grid-area: ten;
+}
+
+
+
+
+
+
+#skill{
+    text-align: center;
+}
+#skill > .skill{
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 20px;
+    grid-template-areas: 
+    "one two three four";
+}
+
+.skill > div > img{
+    width: 100px;
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+}
+
+.tech > div{
+    text-align: center;
+}
+
+.skill > div:nth-child(1){
+    grid-area: one;
+}
+.skill > div:nth-child(2){
+    grid-area: two;
+}
+
+.skill > div:nth-child(3){
+    grid-area: three;
+}
+
+.skill > div:nth-child(4){
+    grid-area: four;
+}
+
+
+#project{
+    text-align: center;
+}
+
+#allProject{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    margin: 50px 0 0;
+    gap: 3%;
+    align-items: center;
+}
+
+.projectCard{
+    background-color: rgba(240, 248, 255, 0.358);
+    backdrop-filter: blur(5px);
+    z-index: 0;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projectCard > img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.projectCard > .projectDetail{
+    background-color: transparent;
+}
+.projectCard > p{
+    background-color: transparent;
+    margin: 10px 0;
+}
+.projectCard > .projectDetail > p{
+    background-color: transparent;
+    margin: 10px 0;
+}
+.projectCard > .projectDetail > p:nth-child(1){
+    text-align: left;
+}
+.projectCard > .projectDetail > p:nth-child(2){
+    text-align: left;
+    padding-left: 20px;
+}
+.projectCard  ol{
+    text-align: left;
+    padding-left: 40px;
+    background-color: transparent;
+}
+.projectCard > .projectDetail > button{
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+#stats{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#stats > .statCard{
+    margin: 20px;
+}
+
+#gitCalender{
+    text-align: center;
+    margin: 50px 0;
+}
+#gitCalender > h2{
+    margin-bottom: 20px;
+}
+.calendar{
+    width: 90%;
+}
+
+.contrib-number{
+    margin: 10px 0;
+}
+
+
+#contact{
+    text-align: center;
+    margin: 30px;
+}
+
+.contactCard{
+    margin: 20px;
+}
+
+.contactCard > p{
+    margin: 10px 0;
+}
+
+.contactCard > button{
+    width: 100px;
+    margin: 30px;
+    padding: 15px;
+
+    background-color: #14e956;
+    color: #0a192f;
+    font-weight: 700;
+    border: 2px solid #14e956;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 426px){
+    #hero > svg{
+        height: 300px;
+        width: 300px;
+        background: transparent;
+    }
+    #intro{
+        margin: 15vh 0;
+    }
+    #intro > p{
+        font-size: 2rem;
+    }
+
+    #techStack > .tech{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-areas: 
+        "one two"
+        "three four"
+        "five six"
+        "seven eight"
+        "nine ten";
+    }
+    .tech > div > img{
+        width: 50px;
+        aspect-ratio: 1;
+    }
+
+    #skill > .skill{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-areas: 
+        "one two"
+        "three four";
+    }
+    .skill > div > img{
+        width: 50px;
+        aspect-ratio: 1;
+    }
+
+    .projectCard{
+        width: 300px;
+    }
+
+    .projectCard > img{
+        width : 250px;
+    }
+
+    #stats  img{
+        width:300px;
+    }
+
+    .contrib-number{
+        font-size: 18px !important;
+    }
+    
+}
+
+@media only screen and (min-width: 425px){
+    #home{
+        margin-top: 20vh;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #home{
+        flex-direction: column;
+    }
+    #about > #image > img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    #detail {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #allProject{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        grid-template-rows: repeat(6, minmax(0,1fr));
+    }
+    
+    
+}
